@@ -1,0 +1,20 @@
+from tkinter import *
+def createwindow() :
+    root = Tk()
+    root.title("HW-Week2#1:Create Basic GUI using grid geometry")
+    root.configure(bg="#EECCAB")
+    root.option_add("*font", "Garamond 14")
+    return(root)
+
+root = createwindow()
+Label(root, text="Find average of 3 numbers Program", bg="#EECCAB", fg="blue").grid(row=0, column=0, pady=20)
+Label(root, text="Number1 :", bg="#B6D7E4", fg="blue").grid(row=1, column=0, pady=10)
+Label(root, text="Number2 :", bg="#F4B9C1", fg="blue").grid(row=2, column=0, pady=10)
+Label(root, text="Number3 :", bg="#F4B9C1", fg="blue").grid(row=3, column=0, pady=10)
+Entry(root, width=12, bg="#D3D3D4", highlightthickness=3, highlightbackground = "black", highlightcolor= "black").grid(row=1, column=1, pady=10, padx=30)
+Entry(root, width=12, bg="#D3D3D4", highlightthickness=3, highlightbackground = "black", highlightcolor= "black").grid(row=2, column=1, pady=10, padx=30)
+Entry(root, width=12, bg="#D3D3D4", highlightthickness=3, highlightbackground = "black", highlightcolor= "black").grid(row=3, column=1, pady=10, padx=30)
+Button(root, text="Reset", width=12).grid(row=4, column=0, pady=20)
+Button(root, text="Find Average", width=12).grid(row=4, column=1, pady=20, padx=30)
+Label(root, text="Create by Nuttanon Rungpiron, ID : 1650705682", bg="#EECCAB", fg="blue").grid(row=5, column=0, pady=10)
+root.mainloop()
